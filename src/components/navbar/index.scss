@@ -1,0 +1,49 @@
+// imports
+@import "../../assets/styles/global.scss";
+
+// component
+.nav {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  background: linear-gradient(to bottom, $dark, $dark-opaque);
+
+  .wrapper {
+    $padbottom: 4em;
+    @include media-min(lg-min) {
+      padding: 2em 5vw;
+      padding-bottom: $padbottom;
+    }
+    @include media-btw(md-min, md-max) {
+      padding: 2em 5vw;
+      padding-bottom: $padbottom;
+    }
+    @include media-max(sm-max) {
+      padding: 2em 4vw;
+      padding-bottom: $padbottom;
+    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+
+    .brand {
+      @include media-max(xs-max) {
+        display: none;
+      }
+    }
+
+    a {
+      color: $light;
+    }
+
+    a:hover {
+      color: gray;
+    }
+  }
+}
+
+// scoped
+a {
+  text-decoration: none;
+}

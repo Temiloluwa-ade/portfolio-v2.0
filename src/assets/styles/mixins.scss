@@ -1,0 +1,65 @@
+// breakpoints
+$breakpoints: (
+  xxs-min: 320px,
+  xxs-max: 369.98px,
+  xs-min: 370px,
+  xs-max: 575.98px,
+  sm-min: 576px,
+  sm-max: 767.98px,
+  md-min: 768px,
+  md-max: 991.98px,
+  lg-min: 992px,
+  lg-max: 1199.98px,
+  xl-min: 1200px,
+  xl-max: 1399.98px,
+  4k-min: 1400px,
+) !default;
+
+// minimum bps width
+@mixin media-min($lower) {
+  @if map-keys($breakpoints) {
+    $min: map-get($breakpoints, $lower);
+    @if $min {
+      @media screen and (min-width: $min) {
+        @content;
+      }
+    } @else {
+      @content;
+    }
+  }
+}
+
+// maximum bps width
+@mixin media-max($upper) {
+  @if map-keys($breakpoints) {
+    $max: map-get($breakpoints, $upper);
+    @if $max {
+      @media screen and (max-width: $max) {
+        @content;
+      }
+    } @else {
+      @content;
+    }
+  }
+}
+
+// multiple bps widths
+@mixin media-btw($lower, $upper) {
+  @if map-keys($breakpoints) {
+    $min: map-get($breakpoints, $lower);
+    $max: map-get($breakpoints, $upper);
+    @if $min != null and $max != null {
+      @media screen and (min-width: $min) and (max-width: $max) {
+        @content;
+      }
+    } @else if $max == null {
+      @include media-min($lower) {
+        @content;
+      }
+    } @else if $min == null {
+      @include media-max($upper) {
+        @content;
+      }
+    }
+  }
+}

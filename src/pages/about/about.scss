@@ -1,0 +1,73 @@
+// imports
+@import "../../assets/styles/global.scss";
+
+// component
+.page {
+  color: $light;
+  scroll-behavior: smooth;
+  overflow: hidden;
+
+  .main {
+    padding: 10em 4em 5em 4em;
+
+    // introduction
+    .intro {
+      &__title {
+        font-size: 75px;
+        font-family: "Butler";
+        font-weight: 700;
+      }
+
+      &__list {
+        margin-left: 8px;
+      }
+
+      &__item {
+        margin-right: 30px;
+      }
+    }
+
+    // hello
+    .section {
+      margin-top: 8em;
+      font-family: "Gilroy";
+      display: grid;
+      grid-template-columns: 0.4fr 1fr;
+
+      &__title {
+        letter-spacing: 3px;
+        margin-top: 6px;
+        font-size: 13px;
+      }
+
+      &__subtitle {
+        line-height: 180%;
+      }
+    }
+    .footer__title {
+      font-size: 75px;
+      font-family: "Butler";
+      font-weight: 700;
+      margin-top: 1.5em;
+    }
+
+    .contact {
+      display: flex;
+      justify-content: space-between;
+      justify-self: center;
+      align-items: center;
+      margin-top: 5em;
+
+      //   &__item {
+      //     margin-right: 5em;
+      //   }
+    }
+
+    .footer {
+      margin-top: 8em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}

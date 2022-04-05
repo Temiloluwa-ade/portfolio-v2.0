@@ -1,0 +1,94 @@
+// imports
+@import "../../assets/styles/global.scss";
+
+// component
+.home {
+  color: $light;
+  scroll-behavior: smooth;
+  overflow: hidden;
+
+  .list {
+    height: 100%;
+    width: 100%;
+
+    .item {
+      // background: url(../../assets/images/8.jpg) 50% 50% no-repeat fixed;
+      // background-size: cover;
+      // background-color: $dark;
+      height: 100vh;
+      width: 100vw;
+
+      .wrapper {
+        background-color: rgba($color: $dark, $alpha: 0.7);
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+
+        .content {
+          padding-left: 4em;
+          padding-right: 4em;
+          margin-top: 12em;
+        }
+
+        .image,
+        .src {
+          position: absolute;
+          top: 0;
+          left: 0;
+          object-fit: cover;
+          z-index: -10;
+          height: 100vh;
+          width: 100vw;
+        }
+
+        .tags {
+          margin-left: 4px;
+          font-weight: 700;
+          font-size: 0.8em;
+          text-transform: uppercase;
+          letter-spacing: 4.5px;
+          font-family: "Century Gothic";
+          margin-bottom: 11px;
+        }
+
+        .title {
+          text-transform: capitalize;
+          font-family: "Butler";
+          font-weight: 900;
+          @include media-min(xl-min) {
+            font-size: 7em;
+          }
+          @include media-btw(lg-min, lg-max) {
+            font-size: 6em;
+          }
+          @include media-btw(md-min, md-max) {
+            font-size: 5em;
+          }
+          @include media-max(sm-max) {
+            font-size: 11vw;
+          }
+          a {
+            color: transparent;
+            -webkit-text-stroke: 1px $light;
+            transition: 0.5s ease-out;
+          }
+          a:hover {
+            color: $light;
+            -webkit-text-stroke: 1px $light;
+            transition: 0.5s all ease-in;
+          }
+        }
+
+        .button {
+          margin-top: 10px;
+          margin-left: 6px;
+          font-weight: 700;
+          font-size: 0.75em;
+          letter-spacing: 4.5px;
+          font-family: "Century Gothic";
+        }
+      }
+    }
+  }
+}

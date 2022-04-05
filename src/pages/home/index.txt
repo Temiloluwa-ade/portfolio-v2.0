@@ -1,0 +1,153 @@
+<div className="projects" data-scroll-section>
+  {/* project one : opened */}
+  <div className="project">
+    {/*
+    <div className="details">
+      YEAR &middot; CATEGORY{" "}
+      <span className="remove">&middot; SECTOR &middot; DEVICE</span>
+    </div>
+    */}
+    <div className="title">
+      <a href=".html">The Last Captain</a>
+    </div>
+  </div>
+  {/* project one : closed */}
+  <div className="project">
+    {/*
+    <div className="details">
+      YEAR &middot; CATEGORY{" "}
+      <span className="remove">&middot; SECTOR &middot; DEVICE</span>
+    </div>
+    */}
+    <div className="title">
+      <a href=".html">The Last Captain</a>
+    </div>
+  </div>
+  {/* project one : closed */}
+  <div className="project">
+    {/*
+    <div className="details">
+      YEAR &middot; CATEGORY{" "}
+      <span className="remove">&middot; SECTOR &middot; DEVICE</span>
+    </div>
+    */}
+    <div className="title">
+      <a href=".html">The Last Captain</a>
+    </div>
+  </div>
+  {/* project one : closed */}
+  <div className="project">
+    {/*
+    <div className="details">
+      YEAR &middot; CATEGORY{" "}
+      <span className="remove">&middot; SECTOR &middot; DEVICE</span>
+    </div>
+    */}
+    <div className="title">
+      <a href=".html">The Last Captain</a>
+    </div>
+  </div>
+  {/* project one : closed */}
+  <div className="project">
+    {/*
+    <div className="details">
+      YEAR &middot; CATEGORY{" "}
+      <span className="remove">&middot; SECTOR &middot; DEVICE</span>
+    </div>
+    */}
+    <div className="title">
+      <a href=".html">The Last Captain</a>
+    </div>
+  </div>
+  {/* project one : closed */}
+  <div className="project">
+    {/*
+    <div className="details">
+      YEAR &middot; CATEGORY{" "}
+      <span className="remove">&middot; SECTOR &middot; DEVICE</span>
+    </div>
+    */}
+    <div className="title">
+      <a href=".html">The Last Captain</a>
+    </div>
+  </div>
+  {/* project one : closed */}
+  <div className="project">
+    {/*
+    <div className="details">
+      YEAR &middot; CATEGORY{" "}
+      <span className="remove">&middot; SECTOR &middot; DEVICE</span>
+    </div>
+    */}
+    <div className="title">
+      <a href=".html">The Last Captain</a>
+    </div>
+  </div>
+  {/* project one : closed */}
+  <div className="project">
+    {/*
+    <div className="details">
+      YEAR &middot; CATEGORY{" "}
+      <span className="remove">&middot; SECTOR &middot; DEVICE</span>
+    </div>
+    */}
+    <div className="title">
+      <a href=".html">The Last Captain</a>
+    </div>
+  </div>
+  {/* project one : closed */}
+</div>
+=========================== 
+.projects {
+  $top: 15em;
+  $bottom: 10em;
+  @include media-min(lg-min) {
+    padding: $top 8vw $bottom 8vw;
+  }
+  @include media-btw(md-min, md-max) {
+    padding: $top 7vw $bottom 7vw;
+  }
+  @include media-max(sm-max) {
+    padding: $top 5.5vw $bottom 5.5vw;
+  }
+  .project {
+    padding-bottom: 5em;
+    .details {
+      font-weight: 700;
+      font-size: 0.85em;
+      letter-spacing: 8px;
+      text-transform: uppercase;
+      .remove {
+        @include media-max(md-max) {
+          display: none;
+        }
+      }
+    }
+    .title {
+      text-transform: capitalize;
+      font-weight: 900;
+      @include media-min(xl-min) {
+        font-size: 7em;
+      }
+      @include media-btw(lg-min, lg-max) {
+        font-size: 6em;
+      }
+      @include media-btw(md-min, md-max) {
+        font-size: 5em;
+      }
+      @include media-max(sm-max) {
+        font-size: 11vw;
+      }
+      a {
+        color: transparent;
+        -webkit-text-stroke: 1px $light;
+        transition: 0.5s ease-out;
+      }
+      a:hover {
+        color: $light;
+        -webkit-text-stroke: 1px $light;
+        transition: 0.5s all ease-in;
+      }
+    }
+  }
+}
