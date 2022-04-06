@@ -6,12 +6,15 @@ import Shadow from "../../components/shadow";
 import "./about.scss";
 
 // component
-function About() {
+const About = () => {
   return (
     <div className="page">
       <Restrict />
       <div className="wrapper">
-        <Navbar />
+        <Navbar
+          linkAnchor="mailto:ibrahimibrahim851@outlook.com"
+          linkTitle="reach out"
+        />
         <main className="main" role="main">
           {/* introduction */}
           <div className="intro">
@@ -109,7 +112,7 @@ function About() {
       </div>
     </div>
   );
-}
+};
 
 // export
 export default About;

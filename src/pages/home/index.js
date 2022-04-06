@@ -1,49 +1,55 @@
-// imports
+// import components
 import { React } from "react";
 import Navbar from "../../components/navbar";
 import Restrict from "../../components/restrict";
 import Shadow from "../../components/shadow";
+// import ReactFullpage from "@fullpage/react-fullpage";
+// import styles
 import "./index.scss";
+// import assets
 import bgImage from "../../assets/images/8.jpg";
+import bgImage2 from "../../assets/images/1.jpg";
 
-// component
-function Home() {
+// home component
+const Home = () => {
   return (
     <>
-      <div className="home">
+      <div className="page">
         <Restrict />
         <div className="wrapper">
-          <Navbar />
-          <div className="list">
+          <Navbar linkAnchor="/about/" linkTitle="about me" />
+          <div className="items">
             <div className="item">
-              <div className="wrapper">
-                <div className="content">
-                  <div className="image">
-                    <img src={bgImage} className="src" alt="" />
-                  </div>
-                  <div className="tags">
-                    {/* 2021 &middot; MOVIE &middot; ENTERTAINMENT &middot;
-                    TELEVISION */}
-                    2021 &middot; DATA SECURITY SOFTWARE
-                  </div>
-                  <div className="title">
-                    <a href=".html">Snick Snack</a>
-                  </div>
-                  <div className="button">VIEW SNICK SNACK CASE STUDY</div>
+              <div className="item__img">
+                <img src={bgImage} className="item__imgsrc" alt="" />
+                <div className="item__imgwrap"></div>
+              </div>
+              <div className="item__content">
+                <div className="item__title">
+                  <a href="/">Snick Snack</a>
+                </div>
+                <div className="item__subtitle">
+                  BUILT IN 2021 &middot; CORPORATE BRAND
+                  <span className="item__link">
+                    {">>"} VIEW CASE STUDY {"<<"}
+                  </span>
                 </div>
               </div>
             </div>
             <div className="item">
-              <div className="wrapper">
-                <div className="content">
-                  <div className="tags">
-                    2021 &middot; MOVIE &middot; ENTERTAINMENT &middot;
-                    TELEVISION
-                  </div>
-                  <div className="title">
-                    <a href=".html">Snick Snack</a>
-                  </div>
-                  <div className="button">VIEW SNICK SNACK CASE STUDY</div>
+              <div className="item__img">
+                <img src={bgImage2} className="item__imgsrc" alt="" />
+                <div className="item__imgwrap"></div>
+              </div>
+              <div className="item__content">
+                <div className="item__title">
+                  <a href="/">Ueno Brand</a>
+                </div>
+                <div className="item__subtitle">
+                  BUILT IN 2021 &middot; CORPORATE BRAND
+                  <span className="item__link">
+                    {">>"} VIEW CASE STUDY {"<<"}
+                  </span>
                 </div>
               </div>
             </div>
@@ -53,7 +59,7 @@ function Home() {
       </div>
     </>
   );
-}
+};
 
-// export
+// export component
 export default Home;

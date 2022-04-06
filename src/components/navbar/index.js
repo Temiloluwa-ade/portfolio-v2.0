@@ -1,18 +1,18 @@
 // imports
 import { React } from "react";
+import { NavLink } from "react-router-dom";
 import "./index.scss";
 
 // component
-function Navbar() {
+function Navbar({ linkAnchor, linkTitle }) {
   return (
     <div className="nav">
       <div className="wrapper">
-        <div className="mail">
-          <a href="mailto">reach out</a>
+        <div className="brand">
+          <NavLink to="/">devwraithe</NavLink>
         </div>
-        <div className="brand">devwraithe</div>
         <div className="about">
-          <a href="mailto">about me</a>
+          <NavLink to={linkAnchor}>{linkTitle}</NavLink>
         </div>
       </div>
     </div>

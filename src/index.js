@@ -1,9 +1,12 @@
+// import components
 import React from "react";
 import ReactDOM from "react-dom";
-import reportWebVitals from "./reportWebVitals";
-import "./index.css";
 import SiteRoutes from "./routes";
+import reportWebVitals from "./reportWebVitals";
+// import styles
+import "./index.css";
 
+// render
 ReactDOM.render(
   <React.StrictMode>
     <SiteRoutes />
