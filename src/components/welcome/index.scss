@@ -1,0 +1,57 @@
+// imports
+@import "../../assets/styles/global.scss";
+
+// component
+.welcome {
+  height: 100vh;
+  width: 100%;
+
+  .loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &__brand {
+      @include media-min(lg-min) {
+        height: 12vh;
+      }
+      @include media-max(xs-max) {
+        height: 6vh;
+      }
+      stroke: $light;
+      stroke-width: 1;
+    }
+
+    &__path {
+      fill: none;
+    }
+  }
+
+  .btn {
+    color: $light;
+    opacity: 0;
+
+    &__border {
+      border: 2px solid $light;
+      height: 7.5em;
+      width: 7.5em;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 100px;
+    }
+
+    &__text {
+      font-size: 0.75rem;
+      letter-spacing: 3px;
+      text-indent: 3px;
+      font-weight: 700;
+      position: fixed;
+      top: 50.3%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

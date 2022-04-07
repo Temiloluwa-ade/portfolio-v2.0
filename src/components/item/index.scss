@@ -1,0 +1,27 @@
+// imports
+@import "../../assets/styles/global.scss";
+
+// component
+.item {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+
+  &__title {
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-family: "Morganite";
+    font-weight: 700;
+    font-size: 8.5em;
+  }
+
+  &__anchor {
+    color: $light;
+    opacity: 0.35;
+  }
+
+  &__anchor:hover {
+    color: $light;
+    opacity: 1;
+    transition: 0.35s all ease-in-out;
+  }
+}

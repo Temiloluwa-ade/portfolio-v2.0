@@ -1,5 +1,6 @@
 // imports
 import { React } from "react";
+import Footer from "../../components/footer";
 import Navbar from "../../components/navbar";
 import Restrict from "../../components/restrict";
 import Shadow from "../../components/shadow";
@@ -100,15 +101,13 @@ const About = () => {
             <div className="contact__item">instagram</div>
             <div className="contact__item">resume</div>
           </div> */}
-
-          <div className="footer">
-            <div className="rights">
-              &copy; Copyright 2022 - Ibrahim Ibrahim alias <b>Devwraithe</b>
-            </div>
-            <div>To be continued...</div>
-          </div>
         </main>
-        <Shadow />
+        <Footer
+          linkA="https://www.github.com/devwraithe"
+          linkATitle="view github"
+          linkB="mailto:ibrahimibrahim851@outlook.com"
+          linkBTitle="send email"
+        />
       </div>
     </div>
   );

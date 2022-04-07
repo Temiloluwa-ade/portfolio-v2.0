@@ -1,23 +1,24 @@
-// imports
+// import external components
 import { React } from "react";
 import { NavLink } from "react-router-dom";
+// import navbar style
 import "./index.scss";
 
 // component
-function Navbar({ linkAnchor, linkTitle }) {
+const Navbar = ({ linkAnchor, linkTitle }) => {
   return (
-    <div className="nav">
-      <div className="wrapper">
-        <div className="brand">
+    <nav className="navbar">
+      <div className="navbar__wrapper">
+        <div className="navbar__brand">
           <NavLink to="/">devwraithe</NavLink>
         </div>
-        <div className="about">
+        <div className="navbar__link">
           <NavLink to={linkAnchor}>{linkTitle}</NavLink>
         </div>
       </div>
-    </div>
+    </nav>
   );
-}
+};
 
 // export
 export default Navbar;

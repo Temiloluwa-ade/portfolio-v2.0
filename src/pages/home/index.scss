@@ -9,76 +9,23 @@
 }
 
 // component
+.home {
+  background: url(../../assets/images/8.jpg) 50% 50% $dark no-repeat fixed;
+  background-size: cover;
+}
+
 .page {
   @include pageStyle;
 
+  .wrapper {
+    background-color: rgba($color: $dark, $alpha: 0.7);
+    width: 100%;
+    height: 100%;
+  }
+
   .items {
+    padding: 8em 6em;
     height: 100%;
     width: 100%;
-
-    .item {
-      position: relative;
-      height: 100vh;
-      width: 100vw;
-
-      &__img,
-      &__imgsrc {
-        position: absolute;
-        top: 0;
-        left: 0;
-        object-fit: cover;
-        height: 100vh;
-        width: 100vw;
-      }
-
-      &__imgwrap {
-        background-color: rgba($color: $dark, $alpha: 0.5);
-        height: 100%;
-        width: 100%;
-        position: relative;
-        z-index: 1;
-      }
-
-      &__content {
-        position: absolute;
-        left: 4em;
-        right: 4em;
-        bottom: 6em;
-        z-index: 2;
-      }
-
-      &__title {
-        margin-top: 12px;
-        text-transform: capitalize;
-        font-family: "Butler";
-        font-weight: 800;
-        font-size: 8em;
-
-        a {
-          color: transparent;
-          -webkit-text-stroke: 2px $light;
-          transition: 0.5s ease-out;
-        }
-        a:hover {
-          color: $light;
-          -webkit-text-stroke: 2px $light;
-          transition: 0.5s all ease-in;
-        }
-      }
-
-      &__subtitle {
-        margin-top: 8px;
-        margin-left: 5px;
-        font-weight: 600;
-        font-size: 0.75em;
-        letter-spacing: 4.5px;
-        font-family: "Gilroy";
-      }
-
-      &__link {
-        font-weight: 700;
-        margin-left: 3em;
-      }
-    }
   }
 }

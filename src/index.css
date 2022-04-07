@@ -5,15 +5,30 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
   text-rendering: optimizeLegibility;
+  /* font-family: "Gilroy"; */
   font-family: "Century Gothic";
   background-color: #000000;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* scroll bar */
+/* anchor */
+a {
+  color: #ffffff;
+  transition: 0.35s all ease-out;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: #808080;
+  transition: 0.35s all ease-in;
+}
+
+/* scrollbar */
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 0;
 }
 
 ::-webkit-scrollbar-track {

@@ -5,7 +5,7 @@
 .shadow {
   position: fixed;
   width: 100%;
-  background: linear-gradient(transparent, rgba($dark, 1));
+  background: linear-gradient(to bottom, $dark-opaque, rgba($dark, 0.95));
   z-index: 10;
   bottom: 0;
 
