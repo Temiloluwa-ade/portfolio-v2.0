@@ -1,0 +1,9 @@
+// import globals
+@import "../../assets/styles/global.scss";
+
+// cursor component
+@media screen and (pointer: coarse) {
+  .cursor {
+    display: none;
+  }
+}

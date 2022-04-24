@@ -1,18 +1,18 @@
-// component imports
+// import component
 import { React } from "react";
-// style imports
+// import style
 import "./index.scss";
 
 // restrict component
 const Restrict = () => {
   return (
-    <div className="restrict">
-      <div className="wrapper">
-        <div className="title">Size Restriction</div>
+    <>
+      <div className="restrict">
+        <div className="title">DEVICE IS TOO SMALL</div>
       </div>
-    </div>
+    </>
   );
 };
 
-// restrict component export
+// export component
 export default Restrict;

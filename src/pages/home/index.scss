@@ -1,31 +1,86 @@
-// imports
+// import globals
 @import "../../assets/styles/global.scss";
 
-// mixin
-@mixin pageStyle {
-  color: $light;
-  scroll-behavior: smooth;
+/* locomotive overflow */
+.has-scroll-smooth {
   overflow: hidden;
 }
-
-// component
-.home {
-  background: url(../../assets/images/8.jpg) 50% 50% $dark no-repeat fixed;
-  background-size: cover;
+.has-scroll-dragging {
+  user-select: none;
 }
 
-.page {
+// home component
+.home {
   @include pageStyle;
-
-  .wrapper {
-    background-color: rgba($color: $dark, $alpha: 0.7);
-    width: 100%;
-    height: 100%;
+  @media screen and (max-width: 360px) {
+    .wrapper {
+      display: none;
+    }
   }
 
-  .items {
-    padding: 8em 6em;
-    height: 100%;
-    width: 100%;
+  .works {
+    .items {
+      list-style-type: none;
+      @include media-btw(lg-min, xl-max) {
+        padding: 10em 5em;
+      }
+      @include media-btw(sm-min, md-max) {
+        padding: 8.5em 3em;
+      }
+      @include media-max(xs-max) {
+        padding: 7em 1.7em;
+      }
+
+      .item {
+        @include media-btw(lg-min, xl-max) {
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+        @include media-btw(sm-min, md-max) {
+          margin-top: 1em;
+          margin-bottom: 1em;
+        }
+        @include media-max(xs-max) {
+          margin-top: 1.5em;
+          margin-bottom: 1.5em;
+        }
+
+        .title {
+          text-transform: uppercase;
+          font-family: "Nordams";
+          font-family: "Morganite";
+          font-family: "Alvaro Condensed";
+          font-family: "Delirium NCV";
+          font-weight: 400;
+
+          @include media-btw(lg-min, xl-max) {
+            font-size: 15vw;
+            letter-spacing: 6px;
+          }
+          @include media-btw(sm-min, md-max) {
+            font-size: 16vw;
+            letter-spacing: 4px;
+          }
+          @include media-max(xs-max) {
+            font-size: 20vw;
+            letter-spacing: 2px;
+          }
+
+          .anchor {
+            color: transparent;
+            -webkit-text-stroke: 2px $light;
+            @include media-max(xs-max) {
+              -webkit-text-stroke: 1px $light;
+            }
+            transition: 0.3s all ease-out;
+          }
+
+          .anchor:hover {
+            color: $light;
+            transition: 0.3s all ease-in;
+          }
+        }
+      }
+    }
   }
 }

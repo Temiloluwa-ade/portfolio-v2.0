@@ -1,24 +1,19 @@
-// import external styles
+// import globals
 @import "../../assets/styles/global.scss";
 
-// style footer component
+// footer component
 .footer {
-  position: fixed;
-  width: 100%;
-  z-index: 10;
+  @include navFoot;
   bottom: 0;
   background: linear-gradient(to top, rgba($dark, 0.95), $dark-opaque);
-  font-size: 0.95rem;
 
   &__wrapper {
-    padding: 2em 4em;
+    @include navFootWrapper;
     padding-top: 4em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  }
 
-    a {
-      text-decoration: underline;
-    }
+  &__item {
+    margin-left: 2.2em;
+    padding-bottom: 16px;
   }
 }

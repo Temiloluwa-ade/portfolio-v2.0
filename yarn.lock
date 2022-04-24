@@ -904,14 +904,6 @@
     "@babel/helper-create-regexp-features-plugin" "^7.16.7"
     "@babel/helper-plugin-utils" "^7.16.7"
 
-"@babel/polyfill@^7.2.5":
-  version "7.12.1"
-  resolved "https://registry.yarnpkg.com/@babel/polyfill/-/polyfill-7.12.1.tgz#1f2d6371d1261bbd961f3c5d5909150e12d0bd96"
-  integrity sha512-X0pi0V6gxLi6lFZpGmeNa4zxtwEmCs42isWLNjZZDE0Y8yVfgu0T2OAHlzBbdYlqbW/YXVvoBHpATEM+goCj8g==
-  dependencies:
-    core-js "^2.6.5"
-    regenerator-runtime "^0.13.4"
-
 "@babel/preset-env@^7.11.0", "@babel/preset-env@^7.12.1", "@babel/preset-env@^7.16.4":
   version "7.16.11"
   resolved "https://registry.yarnpkg.com/@babel/preset-env/-/preset-env-7.16.11.tgz#5dd88fd885fae36f88fd7c8342475c9f0abe2982"
@@ -1155,14 +1147,6 @@
     js-yaml "^4.1.0"
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
-
-"@fullpage/react-fullpage@^0.1.22":
-  version "0.1.22"
-  resolved "https://registry.yarnpkg.com/@fullpage/react-fullpage/-/react-fullpage-0.1.22.tgz#c1750abdc93ecba4e4bd751f0032b31a61923090"
-  integrity sha512-b/iuPvxxPFFjZQ5awGBWHc5uGgKsyhBByATYwhtiiqK55iNskEfAUdRaWAZHwFRnpITryvkWTgdfo4Eb9B1+zQ==
-  dependencies:
-    "@babel/polyfill" "^7.2.5"
-    fullpage.js "^3.1.2"
 
 "@gar/promisify@^1.0.1":
   version "1.1.3"
@@ -3237,12 +3221,7 @@ core-js-pure@^3.20.2, core-js-pure@^3.8.1:
   resolved "https://registry.yarnpkg.com/core-js-pure/-/core-js-pure-3.21.1.tgz#8c4d1e78839f5f46208de7230cebfb72bc3bdb51"
   integrity sha512-12VZfFIu+wyVbBebyHmRTuEE/tZrB4tJToWcwAMcsp3h4+sHR+fMJWbKpYiCRWlhFBq+KNyO8rIV9rTkeVmznQ==
 
-core-js@^2.6.5:
-  version "2.6.12"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.12.tgz#d9333dfa7b065e347cc5682219d6f690859cc2ec"
-  integrity sha512-Kb2wC0fvsWfQrgk8HU5lW6U/Lcs8+9aaYcy4ZFc6DDlo4nZ7n70dEgE5rtR0oG6ufKDUnrwfWL1mXR5ljDatrQ==
-
-core-js@^3.16.2, core-js@^3.19.2:
+core-js@^3.19.2:
   version "3.21.1"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.21.1.tgz#f2e0ddc1fc43da6f904706e8e955bc19d06a0d94"
   integrity sha512-FRq5b/VMrWlrmCzwRrpDYNxyHP9BcAZC+xHJaqTgIE5091ZV1NTmyh0sGOg5XqpnHvR0svdy0sv1gWA1zmhxig==
@@ -4593,11 +4572,6 @@ fsevents@^2.3.2, fsevents@~2.3.2:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.3.2.tgz#8a526f78b8fdf4623b709e0b975c52c24c02fd1a"
   integrity sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==
-
-fullpage.js@^3.1.2:
-  version "3.1.2"
-  resolved "https://registry.yarnpkg.com/fullpage.js/-/fullpage.js-3.1.2.tgz#ee6289f52edb2a9f9c25d09c4022043b701d3cc0"
-  integrity sha512-hv7z6xhbg2StTp1UDq2hi+0oHjhT7cW3zCL3qCIJ3ood5pN0FRBQ2YKIOUobhsp4ATSQlr6sZ2TOcS+Ha+T7Cg==
 
 function-bind@^1.1.1:
   version "1.1.1"
@@ -6056,11 +6030,6 @@ language-tags@^1.0.5:
   integrity sha1-0yHbxNowuovzAk4ED6XBRmH5GTo=
   dependencies:
     language-subtag-registry "~0.3.2"
-
-lazy-line-painter@^1.9.6:
-  version "1.9.6"
-  resolved "https://registry.yarnpkg.com/lazy-line-painter/-/lazy-line-painter-1.9.6.tgz#f4946379df6166ba95e7cdbede72072540bcd418"
-  integrity sha512-1/jmvRiNGxpYfADe5fgns08o92VnzxYh7544w8D8KTT6oZaoN3wa+nrRZ85bzO07Bqx7a4kZ6Z2ravCwGr9vIQ==
 
 lethargy@^1.0.2:
   version "1.0.9"
@@ -7769,13 +7738,6 @@ react-error-overlay@^6.0.10:
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.10.tgz#0fe26db4fa85d9dbb8624729580e90e7159a59a6"
   integrity sha512-mKR90fX7Pm5seCOfz8q9F+66VCc1PGsWSBxKbITjfKVQHMNF2zudxHnMdJiB1fRCb+XsbQV9sO9DCkgsMQgBIA==
 
-react-full-page@^0.1.12:
-  version "0.1.12"
-  resolved "https://registry.yarnpkg.com/react-full-page/-/react-full-page-0.1.12.tgz#59dc3a0e86e56d5783b63c6a48a8d195a347dc78"
-  integrity sha512-Bk6gcxANuWNkeBNmaTUNRcA05zDBqJaTKxlr78dC59gsXhiWPODa8kcrDHClaRAc6JkH16jzbCOO1mNH9Ta1jQ==
-  dependencies:
-    core-js "^3.16.2"
-
 react-is@^16.13.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
@@ -7785,14 +7747,6 @@ react-is@^17.0.1:
   version "17.0.2"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.2.tgz#e691d4a8e9c789365655539ab372762b0efb54f0"
   integrity sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==
-
-react-locomotive-scroll@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/react-locomotive-scroll/-/react-locomotive-scroll-0.2.0.tgz#087f0221fdd374630e70c403482031d09e887a1f"
-  integrity sha512-toHK0x/BuQ6KhjAJDd8FiV0GIdDtq1c0vgt6BoG2VpWcx9cHv6Y2IDDZl7N+MOie0r5bDld2Xy18hAhf8PrVRg==
-  dependencies:
-    use-debounce "^6.0.1"
-    use-resize-observer "6.1.0"
 
 react-refresh@^0.11.0:
   version "0.11.0"
@@ -8062,11 +8016,6 @@ requires-port@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/requires-port/-/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
   integrity sha1-kl0mAdOaxIXgkc8NpcbmlNw9yv8=
-
-resize-observer-polyfill@^1.5.1:
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/resize-observer-polyfill/-/resize-observer-polyfill-1.5.1.tgz#0e9020dd3d21024458d4ebd27e23e40269810464"
-  integrity sha512-LwZrotdHOo12nQuZlHEmtuXdqGoOD0OhaxopaNFxWzInpEgaLWoVuAMbTzixuosCx2nEG58ngzW3vxdWoxIgdg==
 
 resolve-cwd@^3.0.0:
   version "3.0.0"
@@ -9240,18 +9189,6 @@ uri-js@^4.2.2:
   integrity sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==
   dependencies:
     punycode "^2.1.0"
-
-use-debounce@^6.0.1:
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/use-debounce/-/use-debounce-6.0.1.tgz#ed1eb2b30189408fb9792ea2887f4c6c3cb401a3"
-  integrity sha512-kpvIxpa0vOLz/2I2sfNJ72mUeaT2CMNCu5BT1f2HkV9qZK27UVSOFf1sSSu+wjJE4TcR2VTXS2SM569+m3TN7Q==
-
-use-resize-observer@6.1.0:
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/use-resize-observer/-/use-resize-observer-6.1.0.tgz#d4d267a940dbf9c326da6042f8a4bb8c89d29729"
-  integrity sha512-SiPcWHiIQ1CnHmb6PxbYtygqiZXR0U9dNkkbpX9VYnlstUwF8+QqpUTrzh13pjPwcjMVGR+QIC+nvF5ujfFNng==
-  dependencies:
-    resize-observer-polyfill "^1.5.1"
 
 util-deprecate@^1.0.1, util-deprecate@^1.0.2, util-deprecate@~1.0.1:
   version "1.0.2"

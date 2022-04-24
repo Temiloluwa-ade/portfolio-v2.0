@@ -1,65 +1,37 @@
-// breakpoints
-$breakpoints: (
-  xxs-min: 320px,
-  xxs-max: 369.98px,
-  xs-min: 370px,
-  xs-max: 575.98px,
-  sm-min: 576px,
-  sm-max: 767.98px,
-  md-min: 768px,
-  md-max: 991.98px,
-  lg-min: 992px,
-  lg-max: 1199.98px,
-  xl-min: 1200px,
-  xl-max: 1399.98px,
-  4k-min: 1400px,
-) !default;
+// page style
+@mixin pageStyle {
+  color: $light;
+  scroll-behavior: smooth;
+}
 
-// minimum bps width
-@mixin media-min($lower) {
-  @if map-keys($breakpoints) {
-    $min: map-get($breakpoints, $lower);
-    @if $min {
-      @media screen and (min-width: $min) {
-        @content;
-      }
-    } @else {
-      @content;
-    }
+// left right padding
+@mixin miniPadxy {
+  @include media-btw(xl-min, xl-max) {
+    padding: 2em 4em;
+  }
+  @include media-btw(lg-min, lg-max) {
+    padding: 2em 3em;
+  }
+  @include media-btw(sm-min, md-max) {
+    padding: 2em 2em;
+  }
+  @include media-max(xs-max) {
+    padding: 2em 1.8em;
   }
 }
 
-// maximum bps width
-@mixin media-max($upper) {
-  @if map-keys($breakpoints) {
-    $max: map-get($breakpoints, $upper);
-    @if $max {
-      @media screen and (max-width: $max) {
-        @content;
-      }
-    } @else {
-      @content;
-    }
-  }
+// nav footer wrapper
+@mixin navFootWrapper {
+  @include miniPadxy;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-// multiple bps widths
-@mixin media-btw($lower, $upper) {
-  @if map-keys($breakpoints) {
-    $min: map-get($breakpoints, $lower);
-    $max: map-get($breakpoints, $upper);
-    @if $min != null and $max != null {
-      @media screen and (min-width: $min) and (max-width: $max) {
-        @content;
-      }
-    } @else if $max == null {
-      @include media-min($lower) {
-        @content;
-      }
-    } @else if $min == null {
-      @include media-max($upper) {
-        @content;
-      }
-    }
-  }
+// nav footer
+@mixin navFoot {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  font-size: 0.95rem;
 }

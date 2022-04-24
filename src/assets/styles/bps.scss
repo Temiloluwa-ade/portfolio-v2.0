@@ -1,5 +1,5 @@
-// breakpoints
-$breakpoints: (
+// bps
+$bps: (
   xxs-min: 320px,
   xxs-max: 369.98px,
   xs-min: 370px,
@@ -17,8 +17,8 @@ $breakpoints: (
 
 // minimum bps width
 @mixin media-min($lower) {
-  @if map-keys($breakpoints) {
-    $min: map-get($breakpoints, $lower);
+  @if map-keys($bps) {
+    $min: map-get($bps, $lower);
     @if $min {
       @media screen and (min-width: $min) {
         @content;
@@ -31,8 +31,8 @@ $breakpoints: (
 
 // maximum bps width
 @mixin media-max($upper) {
-  @if map-keys($breakpoints) {
-    $max: map-get($breakpoints, $upper);
+  @if map-keys($bps) {
+    $max: map-get($bps, $upper);
     @if $max {
       @media screen and (max-width: $max) {
         @content;
@@ -45,9 +45,9 @@ $breakpoints: (
 
 // multiple bps widths
 @mixin media-btw($lower, $upper) {
-  @if map-keys($breakpoints) {
-    $min: map-get($breakpoints, $lower);
-    $max: map-get($breakpoints, $upper);
+  @if map-keys($bps) {
+    $min: map-get($bps, $lower);
+    $max: map-get($bps, $upper);
     @if $min != null and $max != null {
       @media screen and (min-width: $min) and (max-width: $max) {
         @content;

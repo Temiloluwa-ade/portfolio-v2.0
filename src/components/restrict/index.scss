@@ -1,37 +1,34 @@
-// imports
+// import globals
 @import "../../assets/styles/global.scss";
 
 // restrict component
 .restrict {
-  @include media-min(xl-min) {
+  @include media-min(xs-min) {
     display: none;
   }
+}
 
-  @include media-max(lg-max) {
-    position: fixed;
+// show on SMALL MOBILE devices
+@media screen and (max-width: 360px) {
+  .restrict {
     background-color: $dark;
     color: $light;
     height: 100vh;
     width: 100vw;
-    z-index: 100;
+    position: fixed;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 
-    .wrapper {
-      position: absolute;
-      text-align: center;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 100%;
-
-      .title {
-        font-family: "Butler";
-        font-size: 2.5em;
-        @include media-btw(md-min, lg-max) {
-          font-size: 3em;
-        }
-        font-weight: 900;
-      }
+    .title {
+      font-family: "Morganite";
+      font-size: 16vw;
+      font-weight: 600;
+      -webkit-text-stroke: 0.15px $light;
+      letter-spacing: 3.5px;
+      text-transform: uppercase;
     }
   }
 }

@@ -1,95 +1,156 @@
-/* @font-face {
-  font-family: "Circular Std";
-  src: url("CircularStd-MediumItalic.eot");
-  src: local("Circular Std Medium Italic"), local("CircularStd-MediumItalic"),
-    url("CircularStd-MediumItalic.eot?#iefix") format("embedded-opentype"),
-    url("CircularStd-MediumItalic.woff2") format("woff2"),
-    url("CircularStd-MediumItalic.woff") format("woff"),
-    url("CircularStd-MediumItalic.ttf") format("truetype");
-  font-weight: 500;
-  font-style: italic;
-} */
-
+/* import gilroy typeface */
 @font-face {
-  font-family: "Circular Std";
-  src: url("CircularStd-Black.eot");
-  src: local("Circular Std Black"), local("CircularStd-Black"),
-    url("CircularStd-Black.eot?#iefix") format("embedded-opentype"),
-    url("CircularStd-Black.woff2") format("woff2"),
-    url("CircularStd-Black.woff") format("woff"),
-    url("CircularStd-Black.ttf") format("truetype");
+  font-family: "Gilroy";
+  src: local("Gilroy Black"), local("Gilroy-Black"),
+    url("./gilroy/Gilroy-Heavy.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
+  font-display: auto;
 }
 
 @font-face {
-  font-family: "Circular Std";
-  src: url("CircularStd-Medium.eot");
-  src: local("Circular Std Medium"), local("CircularStd-Medium"),
-    url("CircularStd-Medium.eot?#iefix") format("embedded-opentype"),
-    url("CircularStd-Medium.woff2") format("woff2"),
-    url("CircularStd-Medium.woff") format("woff"),
-    url("CircularStd-Medium.ttf") format("truetype");
+  font-family: "Gilroy";
+  src: local("Gilroy ExtraBold"), local("Gilroy-ExtraBold"),
+    url("./gilroy/Gilroy-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy Bold"), local("Gilroy-Bold"),
+    url("./gilroy/Gilroy-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy SemiBold"), local("Gilroy-SemiBold"),
+    url("./gilroy/Gilroy-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy Medium"), local("Gilroy-Medium"),
+    url("./gilroy/Gilroy-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
+  font-display: auto;
 }
 
 @font-face {
-  font-family: "Circular Std";
-  src: url("CircularStd-Bold.eot");
-  src: local("Circular Std Bold"), local("CircularStd-Bold"),
-    url("CircularStd-Bold.eot?#iefix") format("embedded-opentype"),
-    url("CircularStd-Bold.woff2") format("woff2"),
-    url("CircularStd-Bold.woff") format("woff"),
-    url("CircularStd-Bold.ttf") format("truetype");
-  font-weight: bold;
+  font-family: "Gilroy";
+  src: local("Gilroy Regular"), local("Gilroy-Regular"),
+    url("./gilroy/Gilroy-Regular.ttf") format("truetype");
+  font-weight: 400;
   font-style: normal;
+  font-display: auto;
 }
 
-/* @font-face {
-  font-family: "Circular Std";
-  src: url("CircularStd-BlackItalic.eot");
-  src: local("Circular Std Black Italic"), local("CircularStd-BlackItalic"),
-    url("CircularStd-BlackItalic.eot?#iefix") format("embedded-opentype"),
-    url("CircularStd-BlackItalic.woff2") format("woff2"),
-    url("CircularStd-BlackItalic.woff") format("woff"),
-    url("CircularStd-BlackItalic.ttf") format("truetype");
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy Light"), local("Gilroy-Light"),
+    url("./gilroy/Gilroy-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: auto;
+}
+
+/* import morganite typeface */
+@font-face {
+  font-family: "Morganite";
+  src: local("Morganite Black"), local("Morganite-Black"),
+    url("./morganite/Morganite-Black.ttf") format("truetype");
   font-weight: 900;
-  font-style: italic;
-} */
-
-/* @font-face {
-  font-family: "Circular Std Book";
-  src: url("CircularStd-BookItalic.eot");
-  src: local("Circular Std Book Italic"), local("CircularStd-BookItalic"),
-    url("CircularStd-BookItalic.eot?#iefix") format("embedded-opentype"),
-    url("CircularStd-BookItalic.woff2") format("woff2"),
-    url("CircularStd-BookItalic.woff") format("woff"),
-    url("CircularStd-BookItalic.ttf") format("truetype");
-  font-weight: normal;
-  font-style: italic;
-} */
-
-/* @font-face {
-  font-family: "Circular Std";
-  src: url("CircularStd-BoldItalic.eot");
-  src: local("Circular Std Bold Italic"), local("CircularStd-BoldItalic"),
-    url("CircularStd-BoldItalic.eot?#iefix") format("embedded-opentype"),
-    url("CircularStd-BoldItalic.woff2") format("woff2"),
-    url("CircularStd-BoldItalic.woff") format("woff"),
-    url("CircularStd-BoldItalic.ttf") format("truetype");
-  font-weight: bold;
-  font-style: italic;
-} */
+  font-style: normal;
+  font-display: auto;
+}
 
 @font-face {
-  font-family: "Circular Std";
-  src: url("CircularStd-Book.eot");
-  src: local("Circular Std Book"), local("CircularStd-Book"),
-    url("CircularStd-Book.eot?#iefix") format("embedded-opentype"),
-    url("CircularStd-Book.woff2") format("woff2"),
-    url("CircularStd-Book.woff") format("woff"),
-    url("CircularStd-Book.ttf") format("truetype");
-  font-weight: normal;
+  font-family: "Morganite";
+  src: local("Morganite ExtraBold"), local("Morganite-ExtraBold"),
+    url("./morganite/Morganite-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
   font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "Morganite";
+  src: local("Morganite Bold"), local("Morganite-Bold"),
+    url("./morganite/Morganite-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "Morganite";
+  src: local("Morganite SemiBold"), local("Morganite-SemiBold"),
+    url("./morganite/Morganite-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "Morganite";
+  src: local("Morganite Medium"), local("Morganite-Medium"),
+    url("./morganite/Morganite-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "Morganite";
+  src: local("Morganite Book"), local("Morganite-Book"),
+    url("./morganite/Morganite-Book.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "Morganite";
+  src: local("Morganite Light"), local("Morganite-Light"),
+    url("./morganite/Morganite-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "Morganite";
+  src: local("Morganite ExtraLight"), local("Morganite-ExtraLight"),
+    url("./morganite/Morganite-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "Morganite";
+  src: local("Morganite Thin"), local("Morganite-Thin"),
+    url("./morganite/Morganite-Thin.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: auto;
+}
+
+/* import delirium ncv typeface */
+@font-face {
+  font-family: "Delirium NCV";
+  src: local("Delirium NCV Regular"), local("Delirium-NCV-Regular"),
+    url("./ncv//Delirium-NCV.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: auto;
+  font-kerning: auto;
 }

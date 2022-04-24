@@ -1,12 +1,26 @@
-/* public */
+/* import fonts.css */
+@import url("./assets/fonts/fonts.css");
+
+/* all elements */
+* {
+  cursor: none !important;
+}
+
+@media screen and (pointer: coarse) {
+  * {
+    cursor: auto;
+  }
+}
+
+/* core elements */
 html,
 body {
   margin: 0;
-  overflow-x: hidden;
   scroll-behavior: smooth;
   text-rendering: optimizeLegibility;
-  /* font-family: "Gilroy"; */
-  font-family: "Century Gothic";
+  font-size: 16px;
+  font-family: "Gilroy", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background-color: #000000;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -17,13 +31,17 @@ a {
   color: #ffffff;
   transition: 0.35s all ease-out;
   text-decoration: none;
+  font-weight: 500;
 }
 
-a:hover,
-a:focus,
-a:active {
-  color: #808080;
-  transition: 0.35s all ease-in;
+/* coarse screens like MOBILE */
+@media screen and (pointer: coarse) {
+  a:hover,
+  a:focus,
+  a:active {
+    color: #808080;
+    transition: 0.35s all ease-in;
+  }
 }
 
 /* scrollbar */
